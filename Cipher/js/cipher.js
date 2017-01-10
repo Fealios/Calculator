@@ -26,7 +26,7 @@ var combo = function (functionEntry){
     return (userEntry.concat(reverse(capitalize(functionEntry))));
 };
 
-combo(userEntry);
+//combo(userEntry);
 
 var count = function (userEntry) {
   var splitArr = userEntry.split('');
@@ -45,3 +45,12 @@ var backwards = function() {
 }
 
 backwards(userEntry);
+
+$(document).ready(function(){
+  $ ('#original').click(function(){
+    alert(userEntry);
+  });
+  $ ('#remake').click(function(){
+    alert(backwards(userEntry));
+  });
+})
